@@ -11,6 +11,7 @@ import FilmInfoPage from './components/Pages/Film/FilmInfoPage';
 const routes = (
   <Route path="/" component={Layout}>
     {/* <IndexRoute component={IndexPage}/> */}
+    <IndexRoute component={NoFilmsFound}/> 
     <Route path="nofilmsfound" component={NoFilmsFound}/>
     <Route path="search/:query" component={SearchPage}/>
     <Route path="film/:query" component={FilmInfoPage}/>
