@@ -8,13 +8,10 @@ export default class NoFilmsFound extends React.Component {
     return (
       <div> 
         <HeaderSearch />
-        
         <div className="not-found no-films-found app-content">
           No films found
         </div>
-
       </div>
-
     );
   }
 }

@@ -15,7 +15,7 @@ export default class HeaderSearch extends React.Component {
           <div className="header-search-form">
             <NetflixLink />
             <div>
-              <h2 className="capitalized">Find your movie</h2>
+              <h3 className="capitalized">Find your movie</h3>
             </div>
             <SearchForm />
           </div>
@@ -23,7 +23,7 @@ export default class HeaderSearch extends React.Component {
             <span className="float-left label">7 movies found</span>
             <div className="float-right"> 
               <span className="label">Sort by</span>
-              <OptionsGroup groupName="OrderOptions" checkedValue="rating" className="order-options-group" groupType={OptionsGroup.GroupTypes.label}
+              <OptionsGroup groupName="OrderOptions" checkedValue="release date" className="order-options-group" groupType={OptionsGroup.GroupTypes.label}
                   options={[ {value: "release date", label:"release date"},
                               {value: "rating", label:"rating"} ]}
               />

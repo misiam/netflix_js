@@ -57,10 +57,10 @@ header .header-search-form{
 }
 
 header.header-film {
-  height: 550px;
+  height: 500px;
 }
 header.header-film+.app-content {
-  top: 550px;
+  top: 500px;
 }
 
 .header-film-info {
@@ -69,8 +69,8 @@ header.header-film+.app-content {
 }
 
 .header-film-info .film-img {
-  width: 300px;
-  height: 380px;
+  width: 270px;
+  height: 350px;
 }
 
 .header-film-info-content {
@@ -98,6 +98,7 @@ header .header-toolbar {
   background-color: #f5f5f5;
   color: black;
   padding: 25px 70px;
+  font-weight: 600;
 }
 
 header a.netf_link  {
@@ -105,7 +106,6 @@ header a.netf_link  {
   margin-bottom: 40px;
   display: block;
 }
-
 
 
 .header-search-toolbar {
@@ -204,17 +204,19 @@ a.netf_link:hover {
   outline: none;
   color: whitesmoke;
   height: 40px;
-  width: 90%;
+  width: 100%;
 }
 
 .search-form button {
   background: transparent;
   border: 0;
   color: #fff;
+  position: absolute;
+  right: 50px;
 }
 
 .no-films-found {
-  font-size: 70px;
+  font-size: 60px;
 }
 
 .film-img {
@@ -249,7 +251,7 @@ a.netf_link:hover {
 .header-film-info .columnsContainer {
   margin-left: -20px;
   display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
   height: 350px
 }
 
@@ -259,20 +261,21 @@ a.netf_link:hover {
 
 .film-info-caption {
   display: inline-block;
-  width: 300px;
+  /* width: 300px; */
 }
 
 .film-info-caption-title {
-  font-size: 40px;
+  font-size: 35px;
   display: inline;
   font-weight: 600;
+  margin-right: 20px;
 }
 
 .film-info-caption-rating {
   border-radius: 50%;
   border: 1.5px solid #a5ce7d;
   color: #a5ce7d;
-  font-size: 22px;
+  font-size: 20px;
   padding: 10px;
   display: inline;
 }
@@ -287,7 +290,7 @@ a.netf_link:hover {
 }
 
 .film-info-description {
-  margin: 30px 0;
+  margin: 25px 0;
 }
 
 

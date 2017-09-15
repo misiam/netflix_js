@@ -3,34 +3,21 @@
 import React from 'react';
 
 export default class OptionsGroup extends React.Component {
-    constructor(props) {
-        super(props);
-
-
-        this.state = {
-            groupName: props.groupName,
-            options: props.options,
-            className: props.className,
-            checkedValue: props.checkedValue,
-            groupType: props.groupType
-
-        };
-    }
 
     render(){
-        let state = this.state;
-        let classes = state.className;
+        let props = this.props;
+        let classes = props.className;
 
         var optionElements = [];
 
-        var groupTypeClass = OptionsGroup.GroupTypes[state.groupType];
+        var groupTypeClass = OptionsGroup.GroupTypes[props.groupType];
 
-        for(var i=0; i<state.options.length;i++)
+        for(var i=0; i<props.options.length;i++)
             {
-                var id = state.groupName+"_"+i;
-                var option = state.options[i];
-                var checked = state.checkedValue === option.value ;
-                optionElements.push(<input type="radio" value={option.value}  defaultChecked={checked} name={state.groupName} id={id} />);
+                var id = props.groupName+"_"+i;
+                var option = props.options[i];
+                var checked = props.checkedValue === option.value ;
+                optionElements.push(<input type="radio" value={option.value}  defaultChecked={checked} name={props.groupName} id={id} />);
                 optionElements.push(<label className={"center  " + groupTypeClass} htmlFor={id}>{option.label}</label> );
             }
 
