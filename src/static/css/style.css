@@ -145,10 +145,11 @@ a.netf_link:hover {
 .not-found {
   margin: 0 auto;
   max-width: 900px;
-  padding: 2em;
   text-align: center;
   width: 100%;
   color: darkgray;
+  position: relative;
+  top: 30%;
 }
 
 .not-found h1 {
@@ -161,7 +162,9 @@ a.netf_link:hover {
   font-weight: bold;
 }
 
-
+.no-films-found {
+  font-size: 60px;
+}
 
 
 .navigateBack {
@@ -215,9 +218,7 @@ a.netf_link:hover {
   right: 50px;
 }
 
-.no-films-found {
-  font-size: 60px;
-}
+
 
 .film-img {
   height: 350px;
